@@ -1,15 +1,23 @@
-import { Box, Grid } from "@mui/material"
+import { Grid, Typography } from "@mui/material";
+import PageLayout from "../../components/pagelayout";
 
-const HomePage=()=>{
-    return(
-        <Box pt={5.5}  height='100%' sx={{ overflow: 'auto' }}>
-     <Grid container sx={{height:'9000px', background:'blue'}}>
-            <Grid item>Home Page</Grid>
+const HomePage = () => {
+  return (
+    <PageLayout>
+      <Grid
+        container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Grid item>
+          <Typography fontSize="30px" color="primary">
+            Welcome to Our HomePage
+          </Typography>
         </Grid>
-    </Box>
-
-    
-       
-    )
-}
-export default HomePage
+      </Grid>
+    </PageLayout>
+  );
+};
+export default HomePage;

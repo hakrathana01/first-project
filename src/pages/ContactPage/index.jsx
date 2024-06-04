@@ -1,11 +1,14 @@
-import { Grid } from "@mui/material"
+import { Grid } from "@mui/material";
+import PageLayout from "../../components/pagelayout";
 
-const ContactPage=()=>{
-    return(
-        <Grid container>
-            <Grid item>1</Grid>
-        </Grid>
-    )
-}
+const ContactPage = () => {
+  return (
+    <PageLayout>
+      <Grid container>
+        <Grid item>1</Grid>
+      </Grid>
+    </PageLayout>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
